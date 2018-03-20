@@ -1,51 +1,16 @@
+*** Settings ***
+Library     OperatingSystem
+Library     String
+Library     Collections
+Library     ExtendedSelenium2Library
+
 *** Keywords ***
-user truemoveh pre paid
-    set test variable    ${mobile_number}    ${buy_vas_with_airtime.msisdn_pre_paid}
+fill keyword : '${keyword}' and search
+    input text    id=desktopNavigationSearch    ${keyword}
+    click element    //*[@id="app"]/div[2]/div[2]/div[1]/div/div[1]/div/form/div[2]
 
-user truemoveh post paid
-    set test variable    ${mobile_number}    ${buy_vas_with_airtime.msisdn_post_paid}
+fastwork display search result
+    element should be visible    //*[@id="app-content"]/div[2]/div[2]/div/div[1]
 
-user access with wifi
-    set test variable    ${mobile_number}    ${empty}
-
-display search page
-    ${class_status}    get element attribute    id=menu_search@class
-    should be equal as strings    active    ${class_status}
-    capture page screenshot
-
-go to search page
-    go to ecatalog page
-    click element    id=menu_search
-    display search page
-
-input keyword pre for search
-    input text    id=keyword    ${keyword pre for search}
-
-input keyword post for search
-    input text    id=keyword    ${keyword post for search}
-
-submit search
-    press key  id=keyword   \\13
-    capture page screenshot
-
-select search type
-    click element  //*[@id="form"]/div/div/span[1]
-
-select search type pre
-    select search type
-    click element  //*[@id="form"]//li[text() = 'เติมเงิน']
-
-select search type post
-    select search type
-    click element  //*[@id="form"]//li[text() = 'รายเดือน']
-
-select search type all
-    select search type
-    click element  //*[@id="form"]//li[text() = 'ทั้งหมด']
-
-
-display success pre for search
-    page should contain   ${keyword pre for search}
-
-display success post for search
-    page should contain   ${keyword post for search}
+fastwork do not display search result
+    element should not be visible    //*[@id="app-content"]/div[2]/div[2]/div/div[1]

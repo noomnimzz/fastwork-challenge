@@ -4,6 +4,7 @@ Resource    ../../keywords/features/sign_up_keyword.robot
 Resource    ../../keywords/common_keywords.robot
 Test Setup    browse to fastwork home page
 Test Teardown    close browser
+Documentation    Please update username for sign up in file : common_testdata.yaml before run script first
 
 *** Test Cases ***
 TC_006 User can not sign up with wrong format email address
