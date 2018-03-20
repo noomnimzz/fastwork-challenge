@@ -9,8 +9,8 @@ fill keyword : '${keyword}' and search
     input text    id=desktopNavigationSearch    ${keyword}
     click element    //*[@id="app"]/div[2]/div[2]/div[1]/div/div[1]/div/form/div[2]
 
-fastwork display search result
+page display search result
     element should be visible    //*[@id="app-content"]/div[2]/div[2]/div/div[1]
 
-fastwork do not display search result
+page do not display search result
     element should not be visible    //*[@id="app-content"]/div[2]/div[2]/div/div[1]

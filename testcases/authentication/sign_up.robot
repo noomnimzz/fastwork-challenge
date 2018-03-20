@@ -37,7 +37,7 @@ TC_008 User can not sign up with mismatch password
     And fill password
     And fill confirm password
     And click sign up submit button
-    Then user can see wrong mismatch password error
+    Then user can see mismatch password error
 
 TC_009 User can sign up with email address
     [Tags]    success

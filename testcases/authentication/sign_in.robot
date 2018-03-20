@@ -39,7 +39,7 @@ TC_004 User can not sign in with empty username
     And click sign in submit button
     Then user can see require username error
 
-TC_005 User can not sign in success with password
+TC_005 User can not sign in with empty password
     [Tags]    fail
     Given user has empty password
     When click sign in menu

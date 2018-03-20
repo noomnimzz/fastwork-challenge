@@ -45,5 +45,5 @@ user can see wrong format username error
 user can see wrong format password error
     element text should be    //html/body/div[2]/div[3]/div[2]/div/form/div[3]/small  ห้ามต่ำกว่า 8 ตัวอักษร
 
-user can see wrong mismatch password error
+user can see mismatch password error
     element text should be    //html/body/div[2]/div[3]/div[2]/div/form/div[4]/small   รหัสผ่านไม่ตรงกัน
