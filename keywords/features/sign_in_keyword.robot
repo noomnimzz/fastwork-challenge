@@ -19,9 +19,6 @@ user has empty password
     user has email address and password
     set test variable    ${password}    ${EMPTY}
 
-click sign in menu
-    click element    xpath=//*[@id="app"]/div[2]/div[2]/div[1]/div/div[2]/div[2]/div[2]
-
 fill username and password
     wait until page contains element    //*[@id="modal"]
     input text    //html/body/div[2]/div[2]/div[2]/div/form/div[1]/div/input[1]    ${username}
