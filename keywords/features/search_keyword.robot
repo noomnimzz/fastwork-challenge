@@ -1,8 +1,3 @@
-*** Settings ***
-Resource    ../../resources/imports.robot
-Variables    ../../resources/common_configs.yaml
-Variables    ../../resources/testdata/common/common_testdata.yaml
-
 *** Keywords ***
 user truemoveh pre paid
     set test variable    ${mobile_number}    ${buy_vas_with_airtime.msisdn_pre_paid}
