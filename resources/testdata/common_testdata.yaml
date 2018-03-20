@@ -7,7 +7,7 @@ signin_data:
         incorrect: fastwork
 signup_data:
     email:
-        correct: fastwork.qa+005@gmail.com
+        correct: fastwork.qa+006@gmail.com
         wrong_format: qa.fastworkgmail.com
     password:
         correct: pass99word
