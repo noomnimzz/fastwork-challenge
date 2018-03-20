@@ -1,0 +1,15 @@
+signin_data:
+    email:
+        correct: fastwork.qa@gmail.com
+        incorrect: qa.fastwork@gmail.com
+    password:
+        correct: pass99word
+        incorrect: fastwork
+signup_data:
+    email:
+        correct: fastwork.qa+006@gmail.com
+        wrong_format: qa.fastworkgmail.com
+    password:
+        correct: pass99word
+        wrong_format: fast
+        mismatch: pass9999word
